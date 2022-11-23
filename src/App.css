@@ -87,8 +87,35 @@ outline: none;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
+}
+
+.exp-bg {
+   background-image: url("https://media.istockphoto.com/id/1337381696/photo/keep-learning-concept-letters-of-the-alphabet-on-a-chalk-board-drawn-arrows.jpg?s=612x612&w=0&k=20&c=IxE3IfYjEHhUfwljKnNe_j-xqxfP4e8ghSAPFiDFIMQ=");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
  
 }
+
+.educ-bg {
+   background-image: url("https://media.istockphoto.com/id/1224771284/photo/online-education.jpg?s=612x612&w=0&k=20&c=O2byBqkFBjovWkUOjvpop_OVocZ_zUWb3SEhS43a8c8=");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+ 
+}
+
+
 
 .product-title {
    font-weight: bold;
@@ -143,4 +170,60 @@ header {
   background-attachment: fixed;
   background-position: bottom;
 }
+
+.post {
+  display: flex;
+  text-decoration: none;
+  position: relative;
+  padding: 5rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+.post:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height:100%;
+  background-color: #2125299d;
+  transform-origin: 0 bottom 0;
+  transform: scaleY(0);
+  transition: 0.4s ease-out;
+}
+.post:hover .post-title {
+  color: #fff;
+}
+.post:hover:before {
+  transform: scaleY(1);
+}
+.post-title {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.333;
+  transition: 0.4s ease-out;
+  color: orange;
+}
+
+.c1 {
+  background-image: url(./images/c1.jpg);
+  background-size: cover;
+}
+.c2 {
+  background-image: url(./images/c2.png);
+  background-size: cover;
+}
+.c3 {
+  background-image: url(./images/c3.jpg);
+  background-size: cover;
+}
+.c4 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyUpaRb4laRD1fZ8W3k7RQ8dR4vF31AJCSlQ&usqp=CAU");
+  background-size: cover;
+}
+
+
+
 

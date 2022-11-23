@@ -5,14 +5,9 @@ import UserContext from '../UserContext'
 import { useNavigate, Navigate } from 'react-router-dom'
 import Swal from 'sweetalert2'
 
-
-
-
 export default function Register(){
 	
 	const {user} = useContext(UserContext)
-
-
 	const [email, setEmail] = useState('')
 	const [password1, setPassword1] = useState('')
 	const [password2, setPassword2] = useState('')
@@ -20,10 +15,8 @@ export default function Register(){
 	const [lastName, setLastName] = useState('')
 	const [mobileNumber, setMobileNumber] = useState('')
 
-	// For determining if button is disabled or not
-	const [isActive, setIsActive] = useState(false)
 
-	// Initialize useNavigate
+	const [isActive, setIsActive] = useState(false)
 	const navigate = useNavigate()
 
 
@@ -93,7 +86,7 @@ export default function Register(){
 
 	useEffect(() => {
 		if((firstName !== '' && lastName !== '' && mobileNumber.length === 11 && email !== '' && password1 !== '' && password2 !== '') && (password1 === password2)) {
-			// Enables the submit button if the form data has been verified
+		
 			setIsActive(true)
 		} else {
 			setIsActive(false)
@@ -101,7 +94,6 @@ export default function Register(){
 	}, [firstName, lastName, mobileNumber, email, password1, password2])
 
 	
-		
 	return(
 		(user.id !== null ) ?
         <Navigate to="login"/>

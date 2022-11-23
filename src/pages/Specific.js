@@ -2,12 +2,10 @@ import { useState, useEffect, useContext } from 'react';
 import { Container, Card, Button, Row, Col } from 'react-bootstrap';
 import {useParams, useNavigate, Link} from 'react-router-dom'
 import UserContext from '../UserContext'
-
 import Swal from 'sweetalert2'
 
 export default function Entry() {
 
-	// Gets the productId from the URL of the route that this component is connected to. '/products/:productId'
 	const {entryId} = useParams()
 
 	const {user} = useContext(UserContext)
@@ -18,7 +16,6 @@ export default function Entry() {
 	const [description, setDescription] = useState("");
 	const [reason, setReason] = useState("");
 	const [targetDate, setTargetDate] = useState("");
-
 
 	
 	useEffect(() => {
@@ -44,7 +41,7 @@ export default function Entry() {
 							<Card.Text>{description}</Card.Text>
 							<Card.Title>Target Date:</Card.Title>
 							<Card.Text>{targetDate}</Card.Text>
-									<Link className="btn btn-danger btn-block" to="/entries">Go to Dashboard to take Actions</Link>
+							<Link className="btn btn-danger btn-block" to="/login">Go to Dashboard to take Actions</Link>
 							
 						</Card.Body>		
 					</Card>

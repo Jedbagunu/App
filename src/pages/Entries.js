@@ -23,7 +23,6 @@ export default function Entries(){
     fetchData()
   }, [])
 
-
   return(
     <Container className="py-3 mt-4 sm-4">
       {
@@ -32,8 +31,7 @@ export default function Entries(){
         <>
          <AdminView  entriesData={entries} fetchData={fetchData}/>
          <PersonalView entriesData={entries}/>
-        </>
-       
+        </>   
         :
         <PersonalView entriesData={entries}/>
       }

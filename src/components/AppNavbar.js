@@ -14,7 +14,7 @@ export default function AppNavbar() {
     <Navbar style={{backgroundColor: "#A5C9CA"}} className="nav fixed-top col-sm-12" expand="lg">
       <Container className="col-8 nav-bg  " >
        <img  src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzMbrcnSjdWfdgmHKkJpJ3FnLQmefMINdQHw&usqp=CAU"} alt="Sample Image" height="50" className="p-2"/>
-        <Navbar.Brand as={Link} to="/myentries" className="nav-name" >My Career</Navbar.Brand>
+        <Navbar.Brand as={Link} to="" className="nav-name" >My Career</Navbar.Brand>
           
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

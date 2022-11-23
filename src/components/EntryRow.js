@@ -3,9 +3,8 @@ import Carousel from 'better-react-carousel'
 
 
 const EntryRow = () => {
-  return (
-    
-         <Carousel cols={2} rows={1} gap={10} loop>
+  return ( 
+    <Carousel cols={2} rows={1} gap={10} loop>
       <Carousel.Item>
         <img width="100%" src="https://media-exp1.licdn.com/dms/image/sync/C5627AQGPF_Q81LevVQ/articleshare-shrink_800/0/1669177142857?e=1669784400&v=beta&t=fZJN6E7nS2ETL_IAhmKTWiIXFx0AUr_RQJFq62mSs0M" />
       </Carousel.Item>
@@ -17,7 +16,6 @@ const EntryRow = () => {
       </Carousel.Item>
       <Carousel.Item>
       </Carousel.Item>
-      {/* ... */}
     </Carousel>
 
   );

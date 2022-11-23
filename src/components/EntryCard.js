@@ -7,7 +7,7 @@ import {useEffect, useState} from 'react'
 
 
 
-export default function Product(props){
+export default function Entry(props){
   const { breakPoint, data } = props
    const [entries, setEntries] = useState([])
 
@@ -24,10 +24,7 @@ export default function Product(props){
           <h5 className="text-warning">{targetDate}</h5>
         </Card.Body>
         <Card.Footer>
-         
-          <Link className="btn  btn-block" to={`/entries/${_id}`}>Details</Link>
-     
-          
+          <Link className="btn  btn-block" to={`/entries/${_id}`}>Details</Link>  
         </Card.Footer>
       </Card>
     </Col>

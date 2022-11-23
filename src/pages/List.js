@@ -11,7 +11,7 @@ class List extends Component {
   render() {
     return (
       <Col> 
-        <EntryRow />
+          <EntryRow />
       </Col>
     );
   }
