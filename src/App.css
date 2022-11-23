@@ -1,5 +1,14 @@
+*{
+   font-family: "Roboto", monospace;
+  
+     text-align: center;
+
+
+}
+
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -13,16 +22,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
@@ -36,3 +35,112 @@
     transform: rotate(360deg);
   }
 }
+ 
+.cart1{
+  color: black;
+}
+.nav {
+
+          border-bottom-left-radius: 15px;
+          border-bottom-right-radius: 15px;
+          background-color: #AC3F21;
+          background-color: rgba(0,0,0,0.5);
+          font-family: "Roboto", monospace;
+          font-size: 15px;
+          
+
+}
+.nav-bg{
+  background-color: white;
+
+}
+.login-image {
+   border-radius: 25px;
+
+}
+#submitBtn {
+  background-color: grey;
+}
+.line {
+   border:none;
+          border-top:3px solid #59e2c5;
+          width: 100%;
+          text-align: center;
+}
+.text1 {
+ color: black;
+ font-size: .8rem;
+}
+ .banner {
+  border: none;
+background-color: ;
+resize: none;
+outline: none;
+ }
+.banner-bg {
+   background-image: url("https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fENBUkVFUiUyMFJPQUQlMjBNQVB8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+ 
+}
+
+.product-title {
+   font-weight: bold;
+}
+header {
+  padding: 1rem 0;
+}
+
+.main-content {
+  margin-top: 2rem;
+}
+
+.product {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem 0;
+  margin: 1rem 0;
+}
+
+.product-detail {
+  padding: 0 2rem;
+  font-size: 1rem;
+
+}
+
+.product-price {
+  font-weight: bold;
+  font-size: 140%;
+}
+.myProduct {
+   font-weight: bold;
+}
+.nav-name {
+   font-weight: bold;
+    font-weight: 900;
+     color: red;
+}
+
+.bg-specific {
+ 
+  background-size: 100%;
+
+  width: 100%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.bg-banner {
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+
